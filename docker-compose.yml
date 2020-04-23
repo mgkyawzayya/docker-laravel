@@ -5,7 +5,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    image: digitalocean.com/php
+    image: docker-app
     container_name: app
     restart: unless-stopped
     tty: true
@@ -36,7 +36,7 @@ services:
 
   #MySQL Service
   db:
-    image: mysql:5.7.22
+    image: mysql:5.7
     container_name: db
     restart: unless-stopped
     tty: true
