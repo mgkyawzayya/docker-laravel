@@ -5,9 +5,10 @@
     $ cd docker-app
 
     $ docker run --rm -v $(pwd):/app composer install
-    
+
     $ cp .env.example .env
 
+### For .env Config
 ```
 DB_CONNECTION=mysql
 DB_HOST=db
