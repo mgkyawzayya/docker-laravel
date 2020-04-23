@@ -16,8 +16,11 @@ DB_PASSWORD=your_laravel_db_password
 ### Docker Compose Command
 
     $ docker-compose up -d
+
     $ docker ps
+
     $ docker-compose exec app php artisan key:generate
+    
     $ docker-compose exec app php artisan config:cache
 
 ### Creating a User for MySQL
