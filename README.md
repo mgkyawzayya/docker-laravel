@@ -9,6 +9,7 @@
     $ cp .env.example .env
 
 ### For .env Config
+
 ```
 DB_CONNECTION=mysql
 DB_HOST=db
@@ -36,7 +37,7 @@ DB_PASSWORD=your_laravel_db_password
 
     		mysql> show databases;
 
-    		mysql> GRANT ALL ON laravel.* TO 'laraveluser'@'%'IDENTIFIED BY 'your_laravel_db_password';
+    		mysql> GRANT ALL ON laravel.* TO 'laraveluser'@'%'IDENTIFIED BY 'laravel';
 
     		mysql> FLUSH PRIVILEGES;
 
