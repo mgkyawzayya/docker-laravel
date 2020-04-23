@@ -1,7 +1,11 @@
 # Laravel, Nginx, and MySQL with Docker Compose
 
     $ git clone https://github.com/mgkyawzayya/docker-laravel.git docker-app
+
+    $ cd docker-app
+
     $ docker run --rm -v $(pwd):/app composer install
+    
     $ cp .env.example .env
 
 ```
@@ -20,7 +24,7 @@ DB_PASSWORD=your_laravel_db_password
     $ docker ps
 
     $ docker-compose exec app php artisan key:generate
-    
+
     $ docker-compose exec app php artisan config:cache
 
 ### Creating a User for MySQL
